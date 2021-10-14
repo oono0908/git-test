@@ -1,0 +1,148 @@
+extends ./layout/_layout.pug
+
+block title 
+  title トップページ
+block append style
+  link(rel="stylesheet" href='https://use.fontawesome.com/releases/v5.6.1/css/all.css')
+  link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+  link(rel="stylesheet" href="../css/style.css") 
+block append script 
+  script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+  script(src="../js/swiper.min.js")
+  script(src="../js/top.min.js")
+  div.hero
+    aside.toTop
+      i.fas.fa-arrow-up
+    header.header
+      div.header__logo
+        div.header__text PON DESIGN
+      div.header__menu 
+        div.header__line
+        div.header__line
+        div.header__line
+    div.menu
+      div.menu__wrapper
+        ul.menu__list 
+          li.menu__item NEWS
+          li.menu__item SERVICE
+          li.menu__item WORKS
+          li.menu__item COMPANY
+          li.menu__item RECRUIT
+          li.menu__item CONTACT
+    div.hero__inner
+      h1.hero__title WEB
+        span.hero__title-br DESIGN
+        span.hero__title-br SPECIALIST
+      p.hero__subTitle お客様の夢を叶える
+        br
+        | webサイトを制作
+      div.hero__link
+        a(href="").hero__btn contact
+    div.hero__scroll scroll
+  .contents 
+    section.section.l-section.news-section
+      div.title-wrapper
+        h2.section_margin-top.section__heading NEWS 
+        p.section__heading-sub お知らせ
+      div.body-wrapper
+        include includes/_news-list.pug
+    section.section.l-section.services-section
+      div.title-wrapper
+        h2.section_margin-top.section__heading SERVICES
+        p.section__heading-sub 事業内容
+      div.body-wrapper
+        include includes/_service.pug
+    .more-btn.more-btn_margin-top
+      a(href="").more-btn__link more
+    section.section.l-section_works
+      .works-swiper-wrapper
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide.swiper-img-wrapper
+              img(src="../img/service.jpg" alt="サービス").swiper-img
+            .swiper-slide.swiper-img-wrapper
+              img(src="../img/service.jpg" alt="サービス").swiper-img
+            .swiper-slide.swiper-img-wrapper
+              img(src="../img/service.jpg" alt="サービス").swiper-img
+        .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+      .works-title-wrapper
+        h2.section_works-margin-top.section__heading WORKS
+          p.section__heading-sub 制作実績
+          p.section__txt 様々なジャンルのWebサイト制作が可能です。
+            br
+            |ご購入やお申込み数の増加などを実現します！
+        .more-btn.more-btn_margin-top
+          a(href="").more-btn__link more
+    section.section.l-section__company
+      img(src="../img/pic01.jpg" alt="employement").pic01.pc-only
+      img(src="../img/pic02.jpg" alt="employement").pic02.pc-only
+      img(src="../img/pic03.jpg" alt="employement").pic03.pc-only
+      img(src="../img/pic04.jpg" alt="employement").pic04.pc-only
+      h2.section_margin-top.section__heading COMPANY
+      p.section__heading-sub 私たちについて
+      .company__heading
+        span.company__underline サイトのゴール = 
+          br.sp-only
+          | 夢を叶えること
+      p.section__txt 
+        br
+        |お客様の夢を叶えること。
+        br
+        |それがWebサイトのゴールであり、
+        br
+        |私たちが目指すことです。
+        br
+        |だからこそちゃんと成果を出すサイトを
+        br
+        |全力でお作りします。
+        br
+        |お客様の笑顔を見たい。
+        br
+        |夢を実現する手助けをさせてください。
+      .more-btn.more-btn_margin-top
+        a(href="").more-btn__link more
+    section.section.recruit
+      .recruit-img-wrapper
+        .recruit__img-wrapper 
+          img(src="../img/recruit.jpg" alt="リクルート").recruit__img.sp-only
+          img(src="../img/recruit-pc.jpg" alt="リクルート").recruit__img.pc-only
+      .recruit-title-wrapper
+        h2.section_margin-top.section__heading RECRUIT
+        p.section__heading-sub 採用情報
+        p.section__txt 私たちと一緒に働きませんか？
+        .more-btn.more-btn_margin-top
+          a(href="").more-btn__link more
+    section.section.contact
+      h2.section__heading CONTACT
+      p.section__heading-sub 採用情報
+      p.section__txt お問い合わせ
+      .more-btn.more-btn_margin-top
+        a(href="").more-btn__link more
+  footer.footer 
+    ul.footer__list 
+      li.footer__item 
+        a(href="") HOME
+      li.footer__item 
+        a(href="") NEWS
+      li.footer__item
+        a(href="") SERVICE
+      li.footer__item
+        a(href="") WORKS
+      li.footer__item
+        a(href="") COMPANY
+      li.footer__item
+        a(href="") RECRUIT
+      li.footer__item
+        a(href="") CONTACT
+
+
+
+
+
+
+
+
+
+
