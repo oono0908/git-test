@@ -8,7 +8,7 @@
     display: block;
 }
 .hero{
-    background-image: url(img/hero.png);
+    background-image: url(../img/hero.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@
     }
     &__company{
         padding-bottom: 86px;
-        background-image: url("img/company.png");
+        background-image: url("../img/company.png");
         width: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -567,6 +567,7 @@ position: relative;
     width: 445px;
 }
 }
+
 
 
 
